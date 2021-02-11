@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #939292;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.RoyalInstitute.controller.LogingFormController">
+   <children>
+      <Label layoutX="25.0" layoutY="25.0" prefHeight="50.0" prefWidth="300.0" text="The Royal Institute" textFill="#a10303">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="225.0" layoutY="75.0" prefHeight="310.0" prefWidth="362.0" style="-fx-background-color: white;">
+         <children>
+            <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="25.0" layoutY="151.0" prefHeight="31.0" prefWidth="315.0" promptText="User Name" text="kavindu" />
+            <JFXTextField fx:id="txtPassword" labelFloat="true" layoutX="25.0" layoutY="200.0" prefHeight="31.0" prefWidth="315.0" promptText="Password" text="kavi" />
+            <JFXButton fx:id="btnLogIn" layoutX="25.0" layoutY="250.0" onAction="#btnLogInOnAction" prefHeight="44.0" prefWidth="134.0" style="-fx-background-color: #1C6ADD;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="110.0" fitWidth="110.0" layoutX="120.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/male_user_64px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="310.0" layoutY="201.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/eye_64px.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnLogIn1" layoutX="206.0" layoutY="250.0" onAction="#btnLogInOnAction" prefHeight="44.0" prefWidth="134.0" style="-fx-background-color: #ff8649;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="318.0" fitWidth="200.0" layoutX="14.0" layoutY="76.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/building_200px.png" />
+         </image>
+      </ImageView>
+   </children>
+   <opaqueInsets>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </opaqueInsets>
+</AnchorPane>
