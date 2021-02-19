@@ -1,7 +1,11 @@
 package lk.ijse.RoyalInstitute.entity;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.lang.annotation.Annotation;
+import java.util.List;
 
 @Entity
 public class Student implements SuperEntity {
@@ -12,6 +16,17 @@ public class Student implements SuperEntity {
     private String contact;
     private String dob;
     private String gender;
+    @OneToMany(mappedBy = "student",cascade = CascadeType.ALL)
+    private List<Register> register;
+
+    public Student(List<Register> registrations) {
+        this.register = registrations;
+    }
+
+    public Student(String id) {
+        this.id = id;
+    }
+
 
     public Student(String id, String studentName, String address, String contact, String dob, String gender) {
         this.id = id;
@@ -33,9 +48,7 @@ public class Student implements SuperEntity {
         this.id = id;
     }
 
-    public String getStudentName() {
-        return studentName;
-    }
+    public String getStudentName() {return studentName; }
 
     public void setStudentName(String studentName) {
         this.studentName = studentName;
@@ -84,4 +97,5 @@ public class Student implements SuperEntity {
                 ", gender='" + gender + '\'' +
                 '}';
     }
+
 }

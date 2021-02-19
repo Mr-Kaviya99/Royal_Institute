@@ -36,10 +36,15 @@ public class DashboardViewController {
         setLblTime();
     }
     
-    public void btnStudentOnAction(ActionEvent actionEvent) {
+    public void btnStudentOnAction(ActionEvent actionEvent) throws IOException {
+        initUi("StudentRegistrationView.fxml");
     }
 
-    public void btnCourseOnAction(ActionEvent actionEvent) {
+    public void btnCourseOnAction(ActionEvent actionEvent) throws IOException {
+        initUi("CourseRegistrationView.fxml");
+    }
+    public void btnRegistrationOnAction(ActionEvent actionEvent) throws IOException {
+        initUi("RegistrationView.fxml");
     }
 
     private void genarateOrderDate() {
@@ -59,6 +64,5 @@ public class DashboardViewController {
         timeline.play();
     }
 
-    public void btnRegistrationOnAction(ActionEvent actionEvent) {
-    }
+
 }

@@ -1,18 +1,19 @@
 package lk.ijse.RoyalInstitute.business.custom;
 
 import lk.ijse.RoyalInstitute.business.SuperBO;
+import lk.ijse.RoyalInstitute.dto.CourseDTO;
 import lk.ijse.RoyalInstitute.dto.StudentDTO;
 
 import java.util.ArrayList;
 
 public interface CourseBO extends SuperBO {
-    public boolean saveStudent(StudentDTO studentDTO)throws Exception;
+    public boolean saveCourse(CourseDTO course)throws Exception;
 
-    public boolean deleteStudent(StudentDTO student)throws Exception;
+    public boolean deleteCourse(CourseDTO course)throws Exception;
 
-    public boolean updateStudent(StudentDTO studentDTO)throws Exception;
+    public boolean updateCourse(CourseDTO course)throws Exception;
 
-    public StudentDTO getStudent(String id)throws Exception;
+    public CourseDTO getCourse(String id)throws Exception;
 
-    public ArrayList<StudentDTO> getAllStudents()throws Exception;
+    public ArrayList<CourseDTO> getAllCourses()throws Exception;
 }

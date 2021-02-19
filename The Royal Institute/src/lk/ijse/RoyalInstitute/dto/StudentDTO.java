@@ -1,6 +1,6 @@
 package lk.ijse.RoyalInstitute.dto;
 
-public class CustomerDTO implements SuperDTO{
+public class StudentDTO implements SuperDTO{
     private String id;
     private String studentName;
     private String address;
@@ -8,7 +8,7 @@ public class CustomerDTO implements SuperDTO{
     private String dob;
     private String gender;
 
-    public CustomerDTO(String id, String studentName, String address, String contact, String dob, String gender) {
+    public StudentDTO(String id, String studentName, String address, String contact, String dob, String gender) {
         this.id = id;
         this.studentName = studentName;
         this.address = address;
@@ -17,7 +17,7 @@ public class CustomerDTO implements SuperDTO{
         this.gender = gender;
     }
 
-    public CustomerDTO() {
+    public StudentDTO(String text) {
     }
 
     public String getId() {
@@ -28,9 +28,7 @@ public class CustomerDTO implements SuperDTO{
         this.id = id;
     }
 
-    public String getStudentName() {
-        return studentName;
-    }
+    public String getStudentName() { return studentName;  }
 
     public void setStudentName(String studentName) {
         this.studentName = studentName;
@@ -44,9 +42,7 @@ public class CustomerDTO implements SuperDTO{
         this.address = address;
     }
 
-    public String getContact() {
-        return contact;
-    }
+    public String getContact() { return contact; }
 
     public void setContact(String contact) {
         this.contact = contact;

@@ -20,7 +20,7 @@ import lk.ijse.RoyalInstitute.model.CourseTM;
 import java.util.List;
 import java.util.Optional;
 
-public class CourseRegistrtionController {
+public class CourseRegistrationViewController {
     public JFXTextField txtProgramId;
     public JFXTextField txtProgram;
     public JFXTextField txtDuration;

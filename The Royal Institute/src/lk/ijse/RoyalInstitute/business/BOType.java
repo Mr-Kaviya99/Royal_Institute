@@ -1,5 +1,5 @@
 package lk.ijse.RoyalInstitute.business;
 
 public enum BOType {
-    STUDENT
+    STUDENT,COURSE,REGISTER
 }

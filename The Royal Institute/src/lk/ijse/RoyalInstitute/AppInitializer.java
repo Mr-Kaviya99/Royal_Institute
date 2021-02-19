@@ -22,7 +22,7 @@ public class AppInitializer extends Application {
         Scene scene = new Scene(root);
 
         primaryStage.setScene(scene);
-        primaryStage.setTitle("Customer Form");
+        primaryStage.setTitle("Log In Form");
         primaryStage.centerOnScreen();
         primaryStage.show();
 

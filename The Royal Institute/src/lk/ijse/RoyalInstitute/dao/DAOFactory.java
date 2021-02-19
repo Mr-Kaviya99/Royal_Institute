@@ -1,5 +1,9 @@
 package lk.ijse.RoyalInstitute.dao;
 
+import lk.ijse.RoyalInstitute.dao.custom.impl.CourseDAOImpl;
+import lk.ijse.RoyalInstitute.dao.custom.impl.RegisterDAOImpl;
+import lk.ijse.RoyalInstitute.dao.custom.impl.StudentDAOImpl;
+
 public class DAOFactory {
     private static DAOFactory daoFactory;
 
@@ -14,6 +18,10 @@ public class DAOFactory {
         switch (daoType){
             case STUDENT:
                 return (T) new StudentDAOImpl();
+            case COURSE:
+                return (T) new CourseDAOImpl();
+            case REGISTER:
+                return (T) new RegisterDAOImpl();
             default:
                 return null;
         }
